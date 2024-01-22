@@ -8,7 +8,6 @@ url = "https://newsapi.org/v2/everything?q=tesla&from=2023-12-22&sortBy=publishe
 request = requests.get(url)
 content = request.json()
 
-
 body = ''
 for article in content["articles"][:20]:
     if article["title"] is not None:
